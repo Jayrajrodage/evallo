@@ -68,8 +68,8 @@ All run concurrently using the `concurrently` package.
 | ----------------------- | -------- | -------------------------------------------------------------------------------------------------- |
 | `concurrently`          | Root     | To run multiple npm scripts (backend + frontend) in parallel.                                      |
 | `node-json-db`          | Backend  | Easier than manually managing `fs` for JSON file reads/writes with deep structure                  |
-| `hero-ui`               | Backend  | Provides all required components for the assessment, including DateRangePicker, Select, and Table. |
-| `@tanstack/react-query` | Backend  | More powerful and scalable than `axios`+`useEffect` or manual caching logic                        |
+| `hero-ui`               | Frontend  | Provides all required components for the assessment, including DateRangePicker, Select, and Table. |
+| `@tanstack/react-query` | Frontend  | More powerful and scalable than `axios`+`useEffect`                      |
 
 ---
 
