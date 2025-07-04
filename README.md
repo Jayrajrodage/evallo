@@ -18,6 +18,13 @@ Make sure you have the following installed:
 - [Node.js](https://nodejs.org/) (v19 or higher recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
+## 📥 Clone the Repository
+
+```bash
+git clone https://github.com/Jayrajrodage/evallo.git
+cd evallo
+```
+
 ## 🚀 Installation
 
 To install all dependencies for both `frontend` and `backend`:
