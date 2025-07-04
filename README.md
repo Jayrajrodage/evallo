@@ -64,10 +64,12 @@ All run concurrently using the `concurrently` package.
 
 ## 📦 NPM Packages Used & Reasons
 
-| Package        | Location | Purpose                                                                  |
-| -------------- | -------- | ------------------------------------------------------------------------ |
-| `concurrently` | Root     | To run multiple npm scripts (backend + frontend) in parallel.            |
-| `node-json-db` | Backend  | Used for storing and querying JSON data without manually managing files. |
+| Package                 | Location | Purpose                                                                                            |
+| ----------------------- | -------- | -------------------------------------------------------------------------------------------------- |
+| `concurrently`          | Root     | To run multiple npm scripts (backend + frontend) in parallel.                                      |
+| `node-json-db`          | Backend  | Easier than manually managing `fs` for JSON file reads/writes with deep structure                  |
+| `hero-ui`               | Backend  | Provides all required components for the assessment, including DateRangePicker, Select, and Table. |
+| `@tanstack/react-query` | Backend  | More powerful and scalable than `axios`+`useEffect` or manual caching logic                        |
 
 ---
 
@@ -77,6 +79,6 @@ If you run into issues:
 
 - Make sure Node and npm are correctly installed.
 - Try running `cd backend && npm install` and `cd frontend && npm install` manually to isolate issues.
-- Ensure no processes are blocking default ports (like 3000 or 5000).
+- Ensure no processes are blocking default ports (like 5173 or 5000).
 
 ---
