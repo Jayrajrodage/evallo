@@ -30,7 +30,7 @@ cd evallo
 To install all dependencies for both `frontend` and `backend`:
 
 ```bash
-npm run install
+npm install
 ```
 
 > This will run:
@@ -38,6 +38,14 @@ npm run install
 > - `npm install` in the root
 > - `npm install` in `./backend`
 > - `npm install` in `./frontend`
+
+## ⚙️ Setup Environment Variables (Frontend Only)
+
+After installing dependencies, create a `.env` file in the `frontend` directory and add following value:
+
+```bash
+VITE_BACKEND_URL="http://localhost:5000"
+```
 
 ## 🧪 Development
 
