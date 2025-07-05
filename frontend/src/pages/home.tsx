@@ -30,12 +30,14 @@ export default function Home() {
         ) : isError ? (
           <div className="text-center text-red-500">Something went wrong</div>
         ) : isSuccess ? (
-          <LogsTable
-            data={data}
-            filters={filters}
-            isFetching={isFetching}
-            setFilters={setFilters}
-          />
+          <div>
+            <LogsTable
+              data={data}
+              filters={filters}
+              isFetching={isFetching}
+              setFilters={setFilters}
+            />
+          </div>
         ) : (
           <div className="text-center text-red-500">Something went wrong</div>
         )}

@@ -100,7 +100,6 @@ const LogsTable = ({
   return (
     <Table
       isHeaderSticky
-      removeWrapper
       aria-label="Table"
       bottomContent={bottomContent}
       bottomContentPlacement="outside"
