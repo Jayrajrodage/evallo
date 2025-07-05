@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
 import { createLog, getLogs } from "./controller/logController";
+import dotEnv from "dotenv";
+
+dotEnv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
