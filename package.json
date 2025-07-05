@@ -2,7 +2,7 @@
   "name": "evallo-assessment",
   "private": true,
   "scripts": {
-    "postinstall": "concurrently \"cd backend && npm install\" \"cd frontend && npm install\" \"cd frontend\" ",
+    "postinstall": "concurrently --names \"backend,frontend\" --prefix-colors \"blue,green\" \"cd backend && npm install\" \"cd frontend && npm install\"",
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
   },
   "devDependencies": {
