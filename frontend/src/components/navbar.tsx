@@ -26,7 +26,11 @@ export const Navbar = () => {
 
       <NavbarContent className="" justify="end">
         <NavbarItem className="flex gap-2">
-          <Link isExternal href={"/"} title="GitHub">
+          <Link
+            isExternal
+            href={"https://github.com/Jayrajrodage/evallo"}
+            title="GitHub"
+          >
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
