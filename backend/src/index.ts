@@ -4,9 +4,13 @@ import { createLog, getLogs } from "./controller/logController";
 
 const app = express();
 const port = process.env.PORT || 5000;
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://evallo-six.vercel.app"],
+  })
+);
 
 app.use(express.json());
-app.use(cors({ origin: "*" }));
 app.get("/logs", getLogs);
 app.post("/logs", createLog);
 
