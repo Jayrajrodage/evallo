@@ -73,6 +73,17 @@ All run concurrently using the `concurrently` package.
 
 ---
 
+## 📡 API Usage Notes
+
+### 🔁 `/logs` POST Endpoint
+
+When sending logs to the `/logs` endpoint:
+
+- **Make sure each `traceId` is unique.**
+- Do **not reuse the same `traceId`** across multiple log entries.
+- Duplicate `traceId`s can cause issues in traceability, filtering, and correlation logic.
+
+---
 ## 📬 Troubleshooting
 
 If you run into issues:
